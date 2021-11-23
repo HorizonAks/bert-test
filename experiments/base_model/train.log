@@ -1,0 +1,60 @@
+2021-11-23 13:18:00,303:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:18:00,303:INFO: Loading the datasets...
+2021-11-23 13:18:00,303:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:20:03,399:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:20:03,400:INFO: Loading the datasets...
+2021-11-23 13:20:03,400:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:24:49,972:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:24:49,972:INFO: Loading the datasets...
+2021-11-23 13:24:49,972:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:34:42,105:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:34:42,106:INFO: Loading the datasets...
+2021-11-23 13:34:42,106:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:38:18,257:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:38:18,257:INFO: Loading the datasets...
+2021-11-23 13:38:18,258:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:40:22,176:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:40:22,177:INFO: Loading the datasets...
+2021-11-23 13:40:22,177:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:45:13,172:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:45:13,173:INFO: Loading the datasets...
+2021-11-23 13:45:13,173:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:45:28,224:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:45:28,224:INFO: Loading the datasets...
+2021-11-23 13:45:28,224:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 13:50:51,953:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 13:50:51,953:INFO: Loading the datasets...
+2021-11-23 13:50:51,953:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:00:34,543:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 14:00:34,543:INFO: Loading the datasets...
+2021-11-23 14:00:34,544:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:01:24,260:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 14:01:24,260:INFO: Loading the datasets...
+2021-11-23 14:01:24,261:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:01:37,391:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 14:01:37,391:INFO: Loading the datasets...
+2021-11-23 14:01:37,391:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:01:59,817:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 14:01:59,818:INFO: Loading the datasets...
+2021-11-23 14:01:59,818:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:02:00,860:INFO: loading archive file ./BERT/model/
+2021-11-23 14:03:45,996:INFO: device: cuda, n_gpu: 1, 16-bits training: False
+2021-11-23 14:03:45,996:INFO: Loading the datasets...
+2021-11-23 14:03:45,996:INFO: loading vocabulary file ./BERT/model/vocab.txt
+2021-11-23 14:03:47,049:INFO: loading archive file ./BERT/model/
+2021-11-23 14:03:47,049:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2021-11-23 14:03:48,076:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-11-23 14:03:48,076:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'bert.encoder.layer.4.attention.self.query.weight', 'bert.encoder.layer.4.attention.self.query.bias', 'bert.encoder.layer.4.attention.self.key.weight', 'bert.encoder.layer.4.attention.self.key.bias', 'bert.encoder.layer.4.attention.self.value.weight', 'bert.encoder.layer.4.attention.self.value.bias', 'bert.encoder.layer.4.attention.output.dense.weight', 'bert.encoder.layer.4.attention.output.dense.bias', 'bert.encoder.layer.4.attention.output.LayerNorm.weight', 'bert.encoder.layer.4.attention.output.LayerNorm.bias', 'bert.encoder.layer.4.intermediate.dense.weight', 'bert.encoder.layer.4.intermediate.dense.bias', 'bert.encoder.layer.4.output.dense.weight', 'bert.encoder.layer.4.output.dense.bias', 'bert.encoder.layer.4.output.LayerNorm.weight', 'bert.encoder.layer.4.output.LayerNorm.bias', 'bert.encoder.layer.5.attention.self.query.weight', 'bert.encoder.layer.5.attention.self.query.bias', 'bert.encoder.layer.5.attention.self.key.weight', 'bert.encoder.layer.5.attention.self.key.bias', 'bert.encoder.layer.5.attention.self.value.weight', 'bert.encoder.layer.5.attention.self.value.bias', 'bert.encoder.layer.5.attention.output.dense.weight', 'bert.encoder.layer.5.attention.output.dense.bias', 'bert.encoder.layer.5.attention.output.LayerNorm.weight', 'bert.encoder.layer.5.attention.output.LayerNorm.bias', 'bert.encoder.layer.5.intermediate.dense.weight', 'bert.encoder.layer.5.intermediate.dense.bias', 'bert.encoder.layer.5.output.dense.weight', 'bert.encoder.layer.5.output.dense.bias', 'bert.encoder.layer.5.output.LayerNorm.weight', 'bert.encoder.layer.5.output.LayerNorm.bias', 'bert.encoder.layer.6.attention.self.query.weight', 'bert.encoder.layer.6.attention.self.query.bias', 'bert.encoder.layer.6.attention.self.key.weight', 'bert.encoder.layer.6.attention.self.key.bias', 'bert.encoder.layer.6.attention.self.value.weight', 'bert.encoder.layer.6.attention.self.value.bias', 'bert.encoder.layer.6.attention.output.dense.weight', 'bert.encoder.layer.6.attention.output.dense.bias', 'bert.encoder.layer.6.attention.output.LayerNorm.weight', 'bert.encoder.layer.6.attention.output.LayerNorm.bias', 'bert.encoder.layer.6.intermediate.dense.weight', 'bert.encoder.layer.6.intermediate.dense.bias', 'bert.encoder.layer.6.output.dense.weight', 'bert.encoder.layer.6.output.dense.bias', 'bert.encoder.layer.6.output.LayerNorm.weight', 'bert.encoder.layer.6.output.LayerNorm.bias', 'bert.encoder.layer.7.attention.self.query.weight', 'bert.encoder.layer.7.attention.self.query.bias', 'bert.encoder.layer.7.attention.self.key.weight', 'bert.encoder.layer.7.attention.self.key.bias', 'bert.encoder.layer.7.attention.self.value.weight', 'bert.encoder.layer.7.attention.self.value.bias', 'bert.encoder.layer.7.attention.output.dense.weight', 'bert.encoder.layer.7.attention.output.dense.bias', 'bert.encoder.layer.7.attention.output.LayerNorm.weight', 'bert.encoder.layer.7.attention.output.LayerNorm.bias', 'bert.encoder.layer.7.intermediate.dense.weight', 'bert.encoder.layer.7.intermediate.dense.bias', 'bert.encoder.layer.7.output.dense.weight', 'bert.encoder.layer.7.output.dense.bias', 'bert.encoder.layer.7.output.LayerNorm.weight', 'bert.encoder.layer.7.output.LayerNorm.bias', 'bert.encoder.layer.8.attention.self.query.weight', 'bert.encoder.layer.8.attention.self.query.bias', 'bert.encoder.layer.8.attention.self.key.weight', 'bert.encoder.layer.8.attention.self.key.bias', 'bert.encoder.layer.8.attention.self.value.weight', 'bert.encoder.layer.8.attention.self.value.bias', 'bert.encoder.layer.8.attention.output.dense.weight', 'bert.encoder.layer.8.attention.output.dense.bias', 'bert.encoder.layer.8.attention.output.LayerNorm.weight', 'bert.encoder.layer.8.attention.output.LayerNorm.bias', 'bert.encoder.layer.8.intermediate.dense.weight', 'bert.encoder.layer.8.intermediate.dense.bias', 'bert.encoder.layer.8.output.dense.weight', 'bert.encoder.layer.8.output.dense.bias', 'bert.encoder.layer.8.output.LayerNorm.weight', 'bert.encoder.layer.8.output.LayerNorm.bias', 'bert.encoder.layer.9.attention.self.query.weight', 'bert.encoder.layer.9.attention.self.query.bias', 'bert.encoder.layer.9.attention.self.key.weight', 'bert.encoder.layer.9.attention.self.key.bias', 'bert.encoder.layer.9.attention.self.value.weight', 'bert.encoder.layer.9.attention.self.value.bias', 'bert.encoder.layer.9.attention.output.dense.weight', 'bert.encoder.layer.9.attention.output.dense.bias', 'bert.encoder.layer.9.attention.output.LayerNorm.weight', 'bert.encoder.layer.9.attention.output.LayerNorm.bias', 'bert.encoder.layer.9.intermediate.dense.weight', 'bert.encoder.layer.9.intermediate.dense.bias', 'bert.encoder.layer.9.output.dense.weight', 'bert.encoder.layer.9.output.dense.bias', 'bert.encoder.layer.9.output.LayerNorm.weight', 'bert.encoder.layer.9.output.LayerNorm.bias', 'bert.encoder.layer.10.attention.self.query.weight', 'bert.encoder.layer.10.attention.self.query.bias', 'bert.encoder.layer.10.attention.self.key.weight', 'bert.encoder.layer.10.attention.self.key.bias', 'bert.encoder.layer.10.attention.self.value.weight', 'bert.encoder.layer.10.attention.self.value.bias', 'bert.encoder.layer.10.attention.output.dense.weight', 'bert.encoder.layer.10.attention.output.dense.bias', 'bert.encoder.layer.10.attention.output.LayerNorm.weight', 'bert.encoder.layer.10.attention.output.LayerNorm.bias', 'bert.encoder.layer.10.intermediate.dense.weight', 'bert.encoder.layer.10.intermediate.dense.bias', 'bert.encoder.layer.10.output.dense.weight', 'bert.encoder.layer.10.output.dense.bias', 'bert.encoder.layer.10.output.LayerNorm.weight', 'bert.encoder.layer.10.output.LayerNorm.bias', 'bert.encoder.layer.11.attention.self.query.weight', 'bert.encoder.layer.11.attention.self.query.bias', 'bert.encoder.layer.11.attention.self.key.weight', 'bert.encoder.layer.11.attention.self.key.bias', 'bert.encoder.layer.11.attention.self.value.weight', 'bert.encoder.layer.11.attention.self.value.bias', 'bert.encoder.layer.11.attention.output.dense.weight', 'bert.encoder.layer.11.attention.output.dense.bias', 'bert.encoder.layer.11.attention.output.LayerNorm.weight', 'bert.encoder.layer.11.attention.output.LayerNorm.bias', 'bert.encoder.layer.11.intermediate.dense.weight', 'bert.encoder.layer.11.intermediate.dense.bias', 'bert.encoder.layer.11.output.dense.weight', 'bert.encoder.layer.11.output.dense.bias', 'bert.encoder.layer.11.output.LayerNorm.weight', 'bert.encoder.layer.11.output.LayerNorm.bias']
