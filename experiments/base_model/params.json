@@ -7,8 +7,8 @@
     "clip_grad": 2,
 
     "batch_size": 4,
-    "epoch_num": 20,
-    "min_epoch_num": 5,
+    "epoch_num": 4,
+    "min_epoch_num": 4,
     "patience": 0.02,
     "patience_num": 3
 }

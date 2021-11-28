@@ -112,7 +112,7 @@ def train_and_evaluate(model, train_data, data_loader, fp16, val_data, optimizer
 
         # Save weights of the network
         model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-        optimizer_to_save = optimizer.optimizer if args.fp16 else optimizer
+        optimizer_to_save = optimizer.optimizer if fp16 else optimizer
         utils.save_checkpoint({'epoch': epoch + 1,
                                'state_dict': model_to_save.state_dict(),
                                'optim_dict': optimizer_to_save.state_dict()},
