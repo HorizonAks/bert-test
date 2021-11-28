@@ -33,7 +33,7 @@ parser.add_argument('--loss_scale', type=float, default=0,
                              "Positive power of 2: static loss scaling value.\n")
 
 
-def train(model, data_iterator, optimizer, scheduler, params):
+def train(model, data_iterator, fp16,optimizer, scheduler, params):
     """Train the model on `steps` batches"""
     # set model to training mode
     model.train()
@@ -52,12 +52,12 @@ def train(model, data_iterator, optimizer, scheduler, params):
         # compute model output and loss
         loss = model(batch_data, token_type_ids=None, attention_mask=batch_masks, labels=batch_tags)
 
-        if params.n_gpu > 1 and args.multi_gpu:
+        if params.n_gpu > 1 and params.multi_gpu:
             loss = loss.mean()  # mean() to average on multi-gpu
 
         # clear previous gradients, compute gradients of all variables wrt loss
         model.zero_grad()
-        if args.fp16:
+        if fp16:
             optimizer.backward(loss)
         else:
             loss.backward()
@@ -73,7 +73,7 @@ def train(model, data_iterator, optimizer, scheduler, params):
         t.set_postfix(loss='{:05.3f}'.format(loss_avg()))
     
 
-def train_and_evaluate(model, train_data, val_data, optimizer, scheduler, params, model_dir, restore_file=None):
+def train_and_evaluate(model, train_data, data_loader, fp16, val_data, optimizer, scheduler, params, model_dir, restore_file=None):
     """Train the model and evaluate every epoch."""
     # reload weights from restore_file if specified
     if restore_file is not None:
@@ -95,7 +95,7 @@ def train_and_evaluate(model, train_data, val_data, optimizer, scheduler, params
         # data iterator for training
         train_data_iterator = data_loader.data_iterator(train_data, shuffle=True)
         # Train for one epoch on training set
-        train(model, train_data_iterator, optimizer, scheduler, params)
+        train(model, train_data_iterator, fp16, optimizer, scheduler, params)
 
         # data iterator for evaluation
         train_data_iterator = data_loader.data_iterator(train_data, shuffle=False)
